@@ -44,5 +44,6 @@ we provide some [pretrained model](https://drive.google.com/drive/folders/1GNtk3
 If our project is helpful to you, we hope you can star and fork it. If there are any questions and suggestions, please feel free to contact us.
 
 Thanks for your support.
-## License
-The provided implementation is strictly for academic purposes only. Should you be interested in using our technology for any commercial use, please feel free to contact us.
+
+
+These is working in cli for me 

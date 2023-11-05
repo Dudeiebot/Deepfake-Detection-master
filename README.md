@@ -29,7 +29,7 @@ we provide some [pretrained model](https://drive.google.com/drive/folders/1GNtk3
 ## Usage
 **To test with videos**
 
-`python detect_from_video.py --video_path ./videos/003_000.mp4 --model_path ./pretrained_model/df_c0_best.pkl -o ./output --cuda`
+` python3 detect_from_video.py --video_path ./videos/obama.mp4 --model_path ./pretrained_model/deepfake_c0_xception.pkl -o ./output`
 
 **To test with images**
 

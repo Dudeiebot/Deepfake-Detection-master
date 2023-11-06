@@ -8,8 +8,10 @@ python detect_from_video.py
     -m <path to model file>
     -o <path to output folder, will write one or multiple output videos there>
 
-Author: Andreas Rössler
+These is the pattern of how we will run the python code, check README.md for more
 """
+
+#all our import packages here and we must donwload them through pip3
 import os
 import argparse
 from os.path import join
@@ -20,8 +22,8 @@ import torch.nn as nn
 from PIL import Image as pil_image
 from tqdm import tqdm
 
-from network.models import model_selection
-from dataset.transform import xception_default_data_transforms
+from network.models import model_selection #we import these from out network folder in models.py
+from dataset.transform import xception_default_data_transforms #and  here also
 
 
 def get_boundingbox(face, width, height, scale=1.3, minsize=None):

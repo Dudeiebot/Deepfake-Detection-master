@@ -9,7 +9,7 @@ The pixel-level labeling can be used for forensic analysis. By highlighting mani
 
 An interactive approach allows users to explore the video and focus on specific regions or frames. This can be helpful for researchers, journalists, or anyone interested in analyzing deepfakes in more detail.
 
-the kind of main file is the detect_from_video.py
+the main file is the detect_from_video.py
  
 we install all packages on requirement.txt
 these are all in the readme tho but i can explain more if you need

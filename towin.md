@@ -11,7 +11,7 @@ the `get_boundingbox` takes in the arguement (face, width, height, the constant 
 
 
 `preprocess_image` takes in image, and accepts cuda in our GPU to be true (Preprocesses the image such that it can be fed into our network. During this process we envoke PIL to cast it into a PIL image.) add import PIL
-- image get reverted from BGR and then we cast it to PIL image
+- image get reverted from BGR(blue, green and red) and then we cast it to PIL image
 
 
 Our function `predict_with_model` takes the in the required input also, in the function we call our function `preprocess_image` with it required input

@@ -5,14 +5,13 @@ We can add one or 2 more important import packages(like import torch,dlib) to th
 `get_boundingbox` is returning the face.left(), face.top() and size_bb(which practically check for out of bound in the face with these formula int(max(face.right()-face.left(), face.bottom()-face.top() * scale )))
 scale is a constant 1.3 which is used ti get the bigger face region
 
-So `get_boundingbox` is generating a quadratic bounding box
+So `get_boundingbox` is generating a quadratic bounding box,
 the `get_boundingbox` takes in the arguement (face, width, height, the constant scale and a minsize which is none)
 
 
 
 `preprocess_image` takes in image, and accepts cuda in our GPU to be true (Preprocesses the image such that it can be fed into our network. During this process we envoke PIL to cast it into a PIL image.) add import PIL
-
-STEPS: image get reverted from BGR and then we cast it to PIL image
+- image get reverted from BGR and then we cast it to PIL image
 
 
 Our function `predict_with_model` takes the in the required input also, in the function we call our function `preprocess_image` with it required input

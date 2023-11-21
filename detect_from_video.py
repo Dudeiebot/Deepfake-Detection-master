@@ -11,7 +11,7 @@ python detect_from_video.py
 These is the pattern of how we will run the python code, check README.md for more
 """
 
-#all our import packages here and we must donwload them through pip3
+#all our import packages here and we must download them through pip3
 import os
 import argparse
 from os.path import join
@@ -25,6 +25,7 @@ from tqdm import tqdm
 from network.models import model_selection #we import these from out network folder in models.py
 from dataset.transform import xception_default_data_transforms #and  here also
 
+#We can pick one or more import and add it to our flowchart
 
 def get_boundingbox(face, width, height, scale=1.3, minsize=None):
     """
@@ -54,6 +55,7 @@ def get_boundingbox(face, width, height, scale=1.3, minsize=None):
     size_bb = min(height - y1, size_bb)
 
     return x1, y1, size_bb
+
 
 
 def preprocess_image(image, cuda=True):
@@ -183,7 +185,7 @@ def test_full_image_network(video_path, model_path, output_path,
 
             # --- Prediction ---------------------------------------------------
             # Face crop with dlib and bounding box scale enlargement
-            x, y, size = get_boundingbox(face, width, height)
+            x, y, size = get_boundingbox(face, width, height) #get_boundingbox get called here
             cropped_face = image[y:y+size, x:x+size]
 
             # Actual prediction using our model
